@@ -3,7 +3,7 @@
 This repository contains extensive documentation and scripts written for Sven Co-Op mapping.
 
 The purpose with this repository is to archive, log and document all aspects of
-mapping. While it primarily target to document Sven Co-Op mapping, other GoldSrc games may find these resources useful too.
+mapping in a format that can be easily distributed to other formats. While it primarily targets to document Sven Co-Op mapping, other GoldSrc games may find these resources useful too.
 
 ## Documentation
 
