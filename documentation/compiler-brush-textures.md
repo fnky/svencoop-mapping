@@ -2,11 +2,13 @@
 
 ##### `AAATRIGGER`
   Used on brush entities of the trigger type, and buyzones in Counter-Strike.
+  It is recommended to use `NULL` over this as its faces are rendered invisible,
+  whereas `NULL` is not rendered at all.
 
 ##### `BEVEL` (PRECISE)
   Acts like NULL but doesn't expand when generating clip hulls. It can be used
   to eliminate exterior corner clipping bugs, without using
-  `cliptype` flag, however it's recommended to use `-cliptype precise` as this
+  `cliptype` flag, however it is recommended to use `-cliptype precise` as this
   feature is experimental.
 
 ##### `BEVELBRUSH`
