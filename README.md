@@ -19,6 +19,7 @@ mapping in a format that can be easily distributed to other formats. While it pr
 - [The Whole Half-Life](http://twhl.info) - a neat site and community with tutorials, articles and documentation for Half-Life mapping.
 - [The Wavelength](http://thewavelength.net) - another community with focus on Half-Life, Half-Life 2 and Quake.
 - [Source Modding](http://www.sourcemodding.com) - a modding community and database with a bunch of tools for modding for both Source and GoldSrc.
+- [The303](http://the303.org/tutorials/) - a collection of tutorials for Source and GoldSrc with included info about Sven Co-Op. 
 
 ## Contribute
 
