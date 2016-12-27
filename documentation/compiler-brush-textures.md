@@ -7,7 +7,7 @@
   Acts like NULL but doesn't expand when generating clip hulls. It can be used
   to eliminate exterior corner clipping bugs, without using
   `cliptype` flag, however it's recommended to use `-cliptype precise` as this
-  is feature is experimental.
+  feature is experimental.
 
 ##### `BEVELBRUSH`
 
