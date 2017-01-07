@@ -1,0 +1,39 @@
+= Sven Co-Op Mapping
+Christian Petersen <https://github.com/fnky[@fnky]>
+ifdef::env-github,env-browser[]
+:toc: preamble
+:toclevels: 2
+endif::[]
+ifdef::env-github[]
+:status:
+:outfilesuffix: .adoc
+:!toc-title:
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+:uri-project-repo: https://github.com/fnky/svencoop-mapping
+:uri-nodejs-download: https://nodejs.org/en/download/
+
+This repository contains extensive documentation and scripts written for Sven Co-Op mapping.
+
+The purpose with this repository is to archive, log and document all aspects of mapping in a format that can be easily distributed to other formats. While it primarily targets to document Sven Co-Op mapping, other GoldSrc games may find these resources useful too.
+
+== Contribute
+
+Read more about [how you can contribute](.github/CONTRIBUTING.md).
+
+== Resources
+
+- https://sites.google.com/site/svenmanor/[Sven Manor] - a wonderful collection of tutorials, articles and documentation about Sven Co-Op mapping.
+- http://scmapdb.com[Sven Co-Op Map Database] - Dedicated site to Sven Co-Op mapping community with a whole bunch of community-made maps, textures and tutorials.
+- http://twhl.info[The Whole Half-Life] - a neat site and community with tutorials, articles and documentation for Half-Life mapping.
+- http://thewavelength.net[The Wavelength] - another community with focus on Half-Life, Half-Life 2 and Quake.
+- http://www.sourcemodding.com[Source Modding] - a modding community and database with a bunch of tools for modding for both Source and GoldSrc.
+- http://the303.org/tutorials/[The303] - a collection of tutorials for Source and GoldSrc with included info about Sven Co-Op.
+
+== License
+
+MIT License

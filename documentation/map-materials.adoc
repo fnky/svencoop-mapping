@@ -1,10 +1,12 @@
-# Map Materials
+= Map Materials
+:revdate:   December 31, 2016
+:revnumber: 1.0
 
 When creating custom textures, you can define materials used within the map to give specific textures a sound style for when a player interacts (runs, attacks, etc.) with a brush/entity using that texture.
 
 This can be done in multiple ways, such as prefixing texture names (Sven Co-Op only) or defining a `mapname_materials.txt` file.
 
-## File Definition
+== File Definition
 
 The file contains a list of tags and their coressponding texture name.
 
@@ -18,31 +20,27 @@ M AIR_C1
 
 The letter describes the sound style to be used with the texture.
 
-- `M` metal
-- `V` ventilation
-- `D` dirt
-- `S` slosh liquid
-- `T` tile
-- `G` grate
-- `W` wood
-- `P` computer
-- `Y` glass
-- `F` flesh
-- `O` snow
+- `M` *metal* - Solid metal/steel sounds
+- `V` *ventilation* - Resilient metal/brass sounds
+- `D` *dirt* - Dry dirt/sand/gravel sounds
+- `S` *slosh liquid* - Mud sounds
+- `T` *tile* - Squeeky plastic tile sounds
+- `G` *grate* - Reverbing metal grate sounds
+- `W` *wood* - Wooden planks sounds
+- `P` *computer* - Fragile metal/plastic/electronics sounds (hits only)
+- `Y` *glass* - Glass sounds (hits only)
+- `F` *flesh* - Flesh sounds; sort of like trampling through a muddy puddle
+- `O` *snow* - Sound of crunching snow when walking over
 
-Whereas concrete is the default sound style.
-
-Example:
+Whereas _concrete_ is the default sound style. For example:
 
 ```
-// mapname_materials.txt
-
 M MTL_FLOOR
 T TILE_FLOOR
 O MTN_SNOW01
 ```
 
-### Using Texture Names (Sven Co-Op Only)
+=== Using Texture Names for Material Sounds
 
 In Sven Co-Op, rather than creating a materials file, you can also name your textures with prefixes that will be used to determine their sound style.
 
@@ -61,3 +59,12 @@ O SNOWTEXTURE_
 ```
 
 So for example, if you have a texture `MTL_FLOOR` you can rename it to `METALTEXTUREMTL_FLOOR`, or `SNOWTEXTURE_MTN_SNOW01`.
+
+[[NOTE]]
+====
+The maximum name of a texture is 15 characters.
+====
+
+== See Also
+
+- link:https://sites.google.com/site/svenmanor/material-sounds[Sven Manor Entity Guide: Material Sounds]
