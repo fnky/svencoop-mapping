@@ -16,7 +16,7 @@ Where `MY_GROUP` is the name of the sentence and the following is a list of soun
 
 The `vox/` describes the directory, relative to the sentence file and is  used for subsequent sound names without having to specify it again (like `alert`).
 
-[[NOTE]]
+[NOTE]
 ====
 Sentence names should be uppercase and a maximum of 15 characters.
 ====
@@ -55,7 +55,7 @@ You can create custom sentences with your own sounds and use it with your map.
 
 Create a `sentences.txt` file in `sound/<mapname>`. Create sentences and their corresponding sounds, as described above.
 
-[[NOTE]]
+[NOTE]
 ====
 You can choose any name and location for the sentences file, but it is highly recommended to call it `sentences.txt` and locate it in `sound/<mapname>/sentences.txt`.
 ====
@@ -69,7 +69,7 @@ b. Create a config file `<mapname>.cfg` and set the `sentence_file` cvar to the 
 sentence_file sound/mymap/sentences.txt
 ```
 
-[[WARNING]]
+[IMPORTANT]
 ====
 Setting `sentence_file` keyvalue in `worldspawn` doesn't seem to work properly. To be on the safe side, use the configuration file instead.
 ====
