@@ -51,9 +51,10 @@ You can use `speak`/`spk` command from in-game console to play sounds:
 speak "scientist/hello(p60 v70)"
 ```
 
-== Limitations
-
-A sentence file can contain a maximum of 2048 sentences in Sven Co-op.
+[NOTE]
+====
+Sentence file can contain a maximum of 2048 sentences in Sven Co-op.
+====
 
 == Custom Sentences
 
