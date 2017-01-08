@@ -45,6 +45,12 @@ The following modifiers can be used:
 - `p#` - the pitch of the sound (default `100`)
 - `v#` - the volume (default `100`, max `100`)
 
+You can use `speak`/`spk` command from in-game console to play sounds:
+
+```
+speak "scientist/hello(p60 v70)"
+```
+
 == Limitations
 
 A sentence file can contain a maximum of 2048 sentences in Sven Co-op.
