@@ -34,7 +34,7 @@ WAD File. A wad file containing included wad files (`-wadinclude`) within the co
 
 [[_mapname_.txt]]
 _mapname_.txt::
-Map Description Text File. A file containing information about the map. This is no longer used, use link:#mapname_motd.txt[`mapname_motd.txt`] instead.
+Map Description Text File. A file containing information about the map. This is no longer used, use xref:mapname_motd.txt[`mapname_motd.txt`] instead.
 
 [[_mapname_motd_.txt]]
 _mapname_motd_.txt::
