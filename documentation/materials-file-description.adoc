@@ -85,7 +85,7 @@ b. Create a config file `<mapname>.cfg` and set the `materials_file` cvar to the
 materials_file sound/mymap/materials.txt
 ```
 
-[IMPORTANT]
+[INFO]
 ====
 Setting `materials_file` keyvalue in `worldspawn` doesn't seem to work properly. To be on the safe side, use the configuration file instead.
 ====
