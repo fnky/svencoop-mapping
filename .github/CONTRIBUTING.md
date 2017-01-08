@@ -10,7 +10,7 @@ To get started with a pull request, follow these steps to ensure that our projec
 2. Clone the repository
 
 ```
-git clone git@github.com:your-username/sven-angelscript.git
+git clone git@github.com:your-username/svencoop-mapping.git
 ```
 
 3. Make your change and run the scripts, to ensure everything is in order.
