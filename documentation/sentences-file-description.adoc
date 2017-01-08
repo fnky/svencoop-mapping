@@ -57,7 +57,7 @@ Create a `sentences.txt` file in `sound/<mapname>`. Create sentences and their c
 
 [NOTE]
 ====
-You can choose any name and location for the sentences file, but it is highly recommended to call it `sentences.txt` and locate it in `sound/<mapname>/sentences.txt`.
+You can choose any name and location for the sentences file, but it is highly recommended to call it `sentences.txt` and locate it in `svencoop_addon/sound/<mapname>/sentences.txt`.
 ====
 
 To use your custom sentences file you can either:
@@ -72,4 +72,9 @@ sentence_file sound/mymap/sentences.txt
 [IMPORTANT]
 ====
 Setting `sentence_file` keyvalue in `worldspawn` doesn't seem to work properly. To be on the safe side, use the configuration file instead.
+====
+
+[NOTE]
+====
+Use the `svencoop_addon` directory for all custom content, to avoid changing original game content.
 ====
