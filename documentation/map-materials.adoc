@@ -60,7 +60,7 @@ O SNOWTEXTURE_
 
 So for example, if you have a texture `MTL_FLOOR` you can rename it to `METALTEXTUREMTL_FLOOR`, or `SNOWTEXTURE_MTN_SNOW01`.
 
-[[NOTE]]
+[NOTE]
 ====
 The maximum name of a texture is 15 characters.
 ====
