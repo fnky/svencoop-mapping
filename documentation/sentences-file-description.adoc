@@ -74,7 +74,7 @@ sentence_file sound/mymap/sentences.txt
 Setting `sentence_file` keyvalue in `worldspawn` doesn't seem to work properly. To be on the safe side, use the configuration file instead.
 ====
 
-[NOTE]
+[IMPORTANT]
 ====
 Use the `svencoop_addon` directory for all custom content, to avoid changing original game content.
 ====
