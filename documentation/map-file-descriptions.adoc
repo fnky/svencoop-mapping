@@ -32,54 +32,54 @@ WAD File. A wad file containing included wad files (`-wadinclude`) within the co
 
 == Text Files
 
-[[_mapname_.txt]]
+[[mapname.txt]]
 _mapname_.txt::
-Map Description Text File. A file containing information about the map. This is no longer used, use link:mapname_motd.txt[`mapname_motd.txt`] instead.
+Map Description Text File. A file containing information about the map. This is no longer used, use <<mapname_motd.txt,`mapname_motd.txt`>> instead.
 
-[[_mapname_motd_.txt]]
+[[mapname_motd.txt]]
 _mapname_motd_.txt::
 Message of the Day Text File. A file containing information about the map. This content is shown at map start.
 
-[[_mapname_models_.txt]]
+[[mapname_models.txt]]
 _mapname_models_.txt::
 Models Text File. A file containing a list of model paths and their replacement model paths.
 
-[[_mapname_detail_.txt]]
+[[mapname_detail.txt]]
 _mapname_detail_.txt::
 Detail Text File. A file containing a list of detail textures mapping. Used for overlaying detail images on existing textures within the map.
 
-[[_mapname_readme_.txt]]
+[[mapname_readme.txt]]
 _mapname_readme_.txt::
 Readme Text File. A file describing the map. Not used by Sven Co-Op.
 
-[[_mapname_credits_.txt]]
+[[mapname_credits.txt]]
 _mapname_credits_.txt::
 Credits Text File. A file describing credits for the map. Not used by Sven Co-Op.
 
-[[_mapname_materials_.txt]]
+[[mapname_materials.txt]]
 _mapname_materials_.txt::
 Materials Text File. A file containing a list of textures and their coresponding sound.
 
-[[_mapname_sentences_.txt]]
+[[mapname_sentences.txt]]
 _mapname_sentences_.txt::
 Sentences Text File. A file containg a list of VOX sounds.
 
-[[_mapname_.cfg]]
+[[mapname.cfg]]
 _mapname_.cfg::
 Map Settings Configuration. A file for configuring map settings for the specific map. Overwrites settings in `default_map_settings.cfg`.
 
-[[_mapname_skl_.cfg]]
+[[mapname_skl.cfg]]
 _mapname_skl_.cfg::
 Skill Configuration. A file describing skills for NPCs and monsters within the map.
 
-[[_mapname_.res]]
+[[mapname.res]]
 _mapname_.res::
 Resource File. A file containing a list of resources to be pre-loaded map load for client.
 
-[[_mapname_.gmr]]
+[[mapname.gmr]]
 _mapname_.gmr::
 Global Model Replacement. A file containing a list of model paths and their replacement model paths.
 
-[[_mapname_.gsr]]
+[[mapname.gsr]]
 _mapname_.gsr::
 Global Sound Replacement. A file containing a list of sound paths and their replacement sound paths.
