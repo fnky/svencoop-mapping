@@ -1,0 +1,72 @@
+= Setup J.A.C.K. for Sven Co-op
+:revdate:   January 7, 2017
+:revnumber: 1.0
+
+== Prerequesites
+
+Before you begin setup, make sure you have installed the following:
+
+- Sven Co-op
+- Sven Co-op SDK
+- J.A.C.K.
+
+== Setup Game Configuration
+
+1. Open Options (*Tools > Options...*)
+
+2. Add a new configuration under *Game Profiles*.
+    1. Press *Edit...*.
+    2. Press *Add...*.
+    3. Enter a name for the configuration (e.g. _Sven Co-op_)
+    4. Close the window.
+
+3. In the *Game* tab of *Configuration Settings*, add the FGD files;
+    1. Press *Add...* and
+      - Select the `zhlt.fgd` file (can be found in the _Sven Co-op SDK/mapping/compilers_ directory)
+      - Select the `svencoop.fgd` file (can be found in the _Sven Co-op/svencoop_ directory)
+
+[[NOTE]]
+====
+Make sure the _Enable game configuration_ is checked in the *Game* tab.
+====
+
+4. In the *Directories* tab of *Configuration Settings*, set the directories
+    1. Set _Base Game Directory_ to the `svencoop` directory.
+    2. Set _Mod Directory_ to the `svencoop_addon` directory.
+    3. Set _Source Maps Directory_ to a custom directory.
+
+[[INFO]]
+====
+Setting the _Game Executable_ directory is optional, however it is not recommended
+to start Sven Co-op from the editor.
+====
+
+4. In the *Textures* tab of *Configuration Settings*, add WAD files
+  1. Press *Add Files...* and
+    - Select `zhlt.wad` from `Sven Co-op SDK/mapping/compilers` directory.
+    - Select other WAD files from the `svencoop` or `svencoop_addon` directory.
+
+[[INFO]]
+====
+The `zhlt.wad` contains compiler textures to be used in-game. It is automatically
+included in your compiled BSP.
+====
+
+[[NOTE]]
+====
+_Texture Brightness_ is useful if the textures seem too dark in the editor and texture browser.
+_Default Texture Scale_ is useful for high resolution textures, to scale them accordingly.
+====
+
+5. In the *Build Programs* tab of *Configuration Settings*, select paths for compiler executables.
+    1. For _CSG Executable_, select `SC-CSG` from `Sven Co-op SDK/mapping/compilers` directory.
+    1. For _BSP Executable_, select `SC-BSP` from `Sven Co-op SDK/mapping/compilers` directory.
+    1. For _VIS Executable_, select `SC-VIS` from `Sven Co-op SDK/mapping/compilers` directory.
+    1. For _LIGHT Executable_, select `SC-RAD` from `Sven Co-op SDK/mapping/compilers` directory.
+
+[[NOTE]]
+====
+You can select 64-bit compatible compilers (ending with `_x64`), if you are on a 64-bit system.
+====
+
+6. Press *Apply*/*OK* to save the configurations.

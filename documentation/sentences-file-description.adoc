@@ -1,0 +1,75 @@
+= Sentences File Description
+:revdate:   January 8, 2016
+:revnumber: 1.0
+
+Sentences files describe groups of sounds, known as sentences, to be used for scripted sentences or for monster _Use sentence_ and _Unuse sentence_.
+
+An example of such file:
+
+```
+// A sentence group
+MY_GROUP vox/i am supercooled, alert
+```
+
+Where `MY_GROUP` is the name of the sentence and the following is a list of sounds, delimited by commas.
+
+
+The `vox/` describes the directory, relative to the sentence file and is  used for subsequent sound names without having to specify it again (like `alert`).
+
+[[NOTE]]
+====
+Sentence names should be uppercase and a maximum of 15 characters.
+====
+
+== Modifiers
+
+You can use modifiers to change the emitted sound. These are denoted after a sound name or directory and inbetween paranthesis `()`. You can use multiple modifiers at a time, separated by space:
+
+```
+// Second sound is pitched and starts/ends at different points.
+MY_GROUP scientist/yees(v10), areyouthink(p10 s20 e40)
+```
+
+If declared after a directory, all subsequent sounds will use that modifier:
+
+```
+// All sounds are at volume 10
+MY_GROUP scientist/(v10) hello(p120), goodtoseeyou(p60)
+```
+
+The following modifiers can be used:
+
+- `s#` - the time start from.
+- `e#` - the time end at.
+- `t#` - the time between each sentence? (default `100`)
+- `p#` - the pitch of the sound (default `100`)
+- `v#` - the volume (default `100`, max `100`)
+
+== Limitations
+
+A sentence file can contain a maximum of 2048 sentences in Sven Co-op.
+
+== Custom Sentences
+
+You can create custom sentences with your own sounds and use it with your map.
+
+Create a `sentences.txt` file in `sound/<mapname>`. Create sentences and their corresponding sounds, as described above.
+
+[[NOTE]]
+====
+You can choose any name and location for the sentences file, but it is highly recommended to call it `sentences.txt` and locate it in `sound/<mapname>/sentences.txt`.
+====
+
+To use your custom sentences file you can either:
+
+a. Change `sentence_file` keyvalue in the `worldspawn` entity of your map (Map Properties).
+b. Create a config file `<mapname>.cfg` and set the `sentence_file` cvar to the path of your sentence file.
+
+```
+sentence_file sound/mymap/sentences.txt
+```
+
+[[WARNING]]
+====
+Setting `sentence_file` keyvalue in `worldspawn` doesn't seem to work properly. To be on the safe side, use the configuration file instead.
+====
