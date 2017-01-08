@@ -1,6 +1,6 @@
-= Map Materials
-:revdate:   December 31, 2016
-:revnumber: 1.0
+= Materials File Description
+:revdate:   January 8, 2016
+:revnumber: 1.1
 
 When creating custom textures, you can define materials used within the map to give specific textures a sound style for when a player interacts (runs, attacks, etc.) with a brush/entity using that texture.
 
@@ -63,6 +63,36 @@ So for example, if you have a texture `MTL_FLOOR` you can rename it to `METALTEX
 [NOTE]
 ====
 The maximum name of a texture is 15 characters.
+====
+
+== Custom Materials File
+
+To use custom material sounds for textures, without using texture names a custom materials file can be used.
+
+Create a `materials.txt` file in `sound/<mapname>`. Add materials, as described above.
+
+[NOTE]
+====
+You can choose any name and location for the sentences file, but it is highly recommended to call it `materials.txt` and locate it in `svencoop_addon/sound/<mapname>/materials.txt`.
+====
+
+To use your custom materials file you can either:
+
+a. Change `materials_file` keyvalue in the `worldspawn` entity of your map (Map Properties).
+b. Create a config file `<mapname>.cfg` and set the `materials_file` cvar to the path of your sentence file.
+
+```
+materials_file sound/mymap/materials.txt
+```
+
+[IMPORTANT]
+====
+Setting `materials_file` keyvalue in `worldspawn` doesn't seem to work properly. To be on the safe side, use the configuration file instead.
+====
+
+[IMPORTANT]
+====
+Use the `svencoop_addon` directory for all custom content, to avoid changing original game content.
 ====
 
 == See Also
