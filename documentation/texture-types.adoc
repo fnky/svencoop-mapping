@@ -1,0 +1,44 @@
+= Texture Types
+:revdate:   29 January, 2017
+:revnumber: 1.0
+
+There are several texture types, which are based on the naming of textures in WAD files.
+
+[[regular-tiled-textures]]
+Regular Tiled Textures (`[a-z0-9]`)::
+    Used for world brushes and brush entities and doesn't have any special use.
+
+[[random-tiled-textures]]
+Random Tiled Textures (`-[0-9]...`)::
+    Used to substitute texture randomly on faces by choosing the first texture in the sequence (`-0texture`). If the zero-th isn't selected,
+    the substitution doesn't apply.
+
+[[regular-animated-textures]]
+Regular Animated Textures (`+[0-9]...`)::
+    Used to for animated textures, and will switch the face with similarly named texture (e.g. `+0texture`).
+
+[[switchable-animated-textures]]
+Switchable Animated Textures (`+A...`)::
+    Similar to Regular Animated Textures but is based on the state of the brush entity. When triggered, the first frame animated texture will be used (`+0texture`). If multiple frames exists, it will animate.
+
+[[light-textures]]
+Light Textures (`~...`)::
+    Emits light, based on the `lights.rad` and `mapname.rad` files. Can be used with animated and switchable textures (e.g. `+A~texture` and `+0~texture`). Note that this generates light map, so be careful when applying to multiple faces and brushes as well as large surfaces.
+
+[[transparent-masked-textures]]
+Transparent/Masked Textures (`{...`)::
+    Used for invisible or semi-transparent textures such as ladders. Clears parts of a texture that is blue (`0 0 255`) and only works with brush entities that can change Render Mode and FX (e.g. `func_wall` and `func_illusionary`).
+
+[NOTE]
+====
+This adds to `w_poly` count, as should not be used for completly invisible faces.
+====
+
+[[liquid-textures]]
+Liquid Textures (`!...`)::
+    Any brush with these textures are trated as liquid. To enable alpha transparency apply it to a `func_water` brush entity. Doesn't block VIS.
+
+== See Also
+
+  - link:compiler-brush-textures.adoc[Compiler Brush Textures]
+  - link:materials-file-description.adoc[Materials File Description]
