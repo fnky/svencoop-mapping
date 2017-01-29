@@ -1,6 +1,6 @@
 = Compiler Brush Textures
 :revdate:   29 January, 2017
-:revnumber: 1.1
+:revnumber: 1.2
 
 [[AAATRIGGER]]
 `AAATRIGGER`::
@@ -55,6 +55,11 @@
 `NOCLIP`::
     Behaves like `NULL`, except it is opaque and soft cover?
 
+[[NULL]]
+`NULL`::
+    Removed during compilation and. Can be applied to both entities and world brushes. Commonly used for faces, not seen by the player and doesn't add to the `w_poly` count.
+    This texture still blocks VIS and generates clip hulls to preserve collision detection of the entire brush. Can also be used with `func_illusionary` to prevent collision.
+
 [[ORIGIN]]
 `ORIGIN`::
     Used for setting the origin of origin based brushes like `func_door_rotating`, `func_tracktrain`, etc.
@@ -88,3 +93,7 @@
 [[CONTENTSOLID]]
 `CONTENTSOLID` (SOLID BRUSH)::
     Behaves like a solid brush. Unused and untested.
+
+== See Also
+
+  - link:http://zhlt.info/special-textures.html[ZHLT special textures]
