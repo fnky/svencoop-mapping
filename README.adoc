@@ -23,7 +23,7 @@ The purpose with this repository is to archive, log and document all aspects of 
 
 == Contribute
 
-Read more about [how you can contribute](.github/CONTRIBUTING.md).
+Read more about link:.github/CONTRIBUTING.md[how you can contribute].
 
 == Resources
 
