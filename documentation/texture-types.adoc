@@ -31,7 +31,7 @@ Transparent/Masked Textures (`{...`)::
 
 [NOTE]
 ====
-This adds to `w_poly` count, as should not be used for completly invisible faces.
+This adds to `w_poly` count and should not be used for completly invisible faces.
 ====
 
 [[liquid-textures]]
