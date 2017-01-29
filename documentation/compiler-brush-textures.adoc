@@ -1,14 +1,15 @@
 = Compiler Brush Textures
-:revdate:   December 31, 2016
-:revnumber: 1.0
+:revdate:   29 January, 2017
+:revnumber: 1.1
 
 [[AAATRIGGER]]
 `AAATRIGGER`::
-Used on brush entities of the trigger type, and buyzones in Counter-Strike. It is recommended to use `NULL` over this as its faces are rendered invisible, whereas `NULL` is not rendered at all.
+    Used on brush entities of the trigger type, and buyzones in Counter-Strike. It is recommended to use `NULL` over this as its faces are rendered invisible, whereas `NULL` is not rendered at all.
 
 [[BEVEL]]
 `BEVEL` (PRECISE)::
-    Used on brush entities of the trigger type, and buyzones in Counter-Strike. It is recommended to use `NULL` over this as its faces are rendered invisible, whereas `NULL` is not rendered at all.
+    Behaves like `NULL`, doesn't expand when generating clip hulls. Also used to eliminate exterior corner clipping bugs.
+    It is recommended to use `-cliptype precise` for removing clipping errors.
 
 [[BEVELBRUSH]]
 `BEVELBRUSH`::
