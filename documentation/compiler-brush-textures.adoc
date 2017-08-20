@@ -1,6 +1,6 @@
 = Compiler Brush Textures
 :revdate:   20 August, 2017
-:revnumber: 1.3
+:revnumber: 1.4
 
 [[AAATRIGGER]]
 link:#AAATRIGGER[`AAATRIGGER`]::
