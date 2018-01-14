@@ -1,5 +1,5 @@
 = Materials File Description
-:revdate:   January 8, 2016
+:revdate:   January 14, 2018
 :revnumber: 1.1
 
 When creating custom textures, you can define materials used within the map to give specific textures a sound style for when a player interacts (runs, attacks, etc.) with a brush/entity using that texture.
@@ -32,13 +32,7 @@ The letter describes the sound style to be used with the texture.
 - `F` *flesh* - Flesh sounds; sort of like trampling through a muddy puddle
 - `O` *snow* - Sound of crunching snow when walking over
 
-Whereas _concrete_ is the default sound style. For example:
-
-```
-M MTL_FLOOR
-T TILE_FLOOR
-O MTN_SNOW01
-```
+Whereas _concrete_ is the default sound style.
 
 === Using Texture Names for Material Sounds
 

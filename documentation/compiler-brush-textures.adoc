@@ -1,5 +1,5 @@
 = Compiler Brush Textures
-:revdate:   20 August, 2017
+:revdate:   January 14, 2018
 :revnumber: 1.4
 
 [[AAATRIGGER]]
@@ -77,7 +77,7 @@ link:#SOLIDHINT[`SOLIDHINT`]::
     Similar to `HINT` but can be applied to faces of solid brushes. Can reduce number of visleaf cuts and decrease the size of the compiled map. Makes it possibe to manually add extra faces for the BSP compiler to choose from, in order to help reduce face count and other counts.
 
 [[TRANSLUCENT]]
-link:#TRANSULCENT[`TRANSULCENT`]::
+link:#TRANSLUCENT[`TRANSLUCENT`]::
     Similar to `CLIP` and behaves like `func_wall` and clips projectiles, dropped weapons and items. It can also prevent VIS, unlike a `func_wall` with a transparent texture.
 
 == Unused/Unknown Brush Textures
