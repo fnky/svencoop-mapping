@@ -1,6 +1,6 @@
 = Compiler Brush Textures
 :revdate:   April 20, 2019
-:revnumber: 1.5
+:revnumber: 1.6
 
 [[AAATRIGGER]]
 link:#AAATRIGGER[`AAATRIGGER`]::
@@ -48,6 +48,14 @@ link:#CLIPHULL2[`CLIPHULL2`] (BIG SIZE)::
 link:#CLIPHULL3[`CLIPHULL3`] (CROUCH)::
     Clips crouching players and only allows standing. Will stuck players who crouch inside the brush.
 
+[[CLIPBEVEL]]
+link:#CLIPBEVEL[`CLIPBEVEL`]::
+    Like `BEVEL` but adds clip hulls, like `CLIP`.
+
+[[CLIPBEVELBRUSH]]
+link:#CLIPBEVELBRUSH[`CLIPBEVELBRUSH`]::
+    Like `BEVELBRUSH` but adds clip hulls, like `CLIP`.
+
 [[CONTENTEMPTY]]
 link:#CONTENTEMPTY[`CONTENTEMPTY`] (EMPTY BRUSH)::
     Behaves like `func_illusionary` without texture. Will block thirdperson camera as if the camera hit a wall behind the player.
@@ -74,6 +82,10 @@ link:#NULL[`NULL`]::
     ====
     ZHLT and VHLT has a `-nonulltex` flag which can be used to disable `NULL` stripping, allowing the texture to be rendered.
     ====
+
+[[NULLNOCLIP]]
+link:#NULLNOCLIP[`NULLNOCLIP`]::
+    Behaves like `NOCLIP` and `NULL` combined.
 
 [[ORIGIN]]
 link:#ORIGIN[`ORIGIN`]::
