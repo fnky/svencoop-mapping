@@ -103,7 +103,7 @@ link:#mapname_skl.cfg[_mapname_skl_.cfg]::
 
 [[mapname.res]]
 link:#mapname.res[_mapname_.res]::
-*Resource File*. A file containing a list of resources to be pre-loaded map load for client.
+*Resource File*. A file containing a list of resources to be pre-loaded when the map is loaded by the client.
 
 [[mapname.gmr]]
 link:#mapname.gmr[_mapname_.gmr]::
