@@ -58,11 +58,16 @@ Not needed in distributions.
 
 [[mapname.txt]]
 link:#mapname.txt[_mapname_.txt]::
-*Map Description Text* File. A file containing information about the map. This is no longer used, use <<mapname_motd.txt,`mapname_motd.txt`>> instead.
+*Map Description Text File*. A file containing information about the map.
+
+[IMPORTANT]
+====
+This is no longer used in Sven Co-Op, use <<mapname_motd.txt,`mapname_motd.txt`>> instead.
+====
 
 [[mapname_motd.txt]]
 link:#mapname_motd.txt[_mapname_motd_.txt]::
-*Message of the* Day Text File. A file containing information about the map. This content is shown at map start.
+*Message of the Day Text File*. A file containing information about the map. This content is shown at map start.
 
 [[mapname_models.txt]]
 link:#mapname_models.txt[_mapname_models_.txt]::
