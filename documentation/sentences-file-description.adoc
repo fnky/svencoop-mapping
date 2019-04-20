@@ -1,6 +1,6 @@
 = Sentences File Description
-:revdate:   January 8, 2016
-:revnumber: 1.0
+:revdate:   April 20, 2019
+:revnumber: 1.1
 
 Sentences files describe groups of sounds, known as sentences, to be used for scripted sentences or for monster _Use sentence_ and _Unuse sentence_.
 
@@ -13,13 +13,9 @@ MY_GROUP vox/i am supercooled, alert
 
 Where `MY_GROUP` is the name of the sentence and the following is a list of sounds, delimited by commas.
 
-
 The `vox/` describes the directory, relative to the sentence file and is  used for subsequent sound names without having to specify it again (like `alert`).
 
-[NOTE]
-====
-Sentence names should be uppercase and a maximum of 15 characters.
-====
+NOTE: Sentence names should be uppercase and a maximum of 15 characters.
 
 == Modifiers
 
@@ -51,10 +47,7 @@ You can use `speak`/`spk` command from in-game console to play sounds:
 speak "scientist/hello(p60 v70)"
 ```
 
-[NOTE]
-====
-Sentence file can contain a maximum of 2048 sentences in Sven Co-op.
-====
+NOTE: Sentence file can contain a maximum of 2048 sentences in Sven Co-op.
 
 == Custom Sentences
 
@@ -62,10 +55,7 @@ You can create custom sentences with your own sounds and use it with your map.
 
 Create a `sentences.txt` file in `sound/<mapname>`. Create sentences and their corresponding sounds, as described above.
 
-[NOTE]
-====
-You can choose any name and location for the sentences file, but it is highly recommended to call it `sentences.txt` and locate it in `svencoop_addon/sound/<mapname>/sentences.txt`.
-====
+NOTE: You can choose any name and location for the sentences file, but it is highly recommended to call it `sentences.txt` and locate it in `svencoop_addon/sound/<mapname>/sentences.txt`.
 
 To use your custom sentences file you can either:
 

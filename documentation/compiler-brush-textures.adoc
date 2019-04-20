@@ -1,127 +1,128 @@
 = Compiler Brush Textures
 :revdate:   April 20, 2019
-:revnumber: 1.6
+:revnumber: 1.7
 
 [[AAATRIGGER]]
 link:#AAATRIGGER[`AAATRIGGER`]::
-    Used on brush entities of the trigger type, and buyzones in Counter-Strike.
-
-    [[NOTE]]
-    ====
-    It is recommended to use `NULL` over this as its faces are rendered invisible, whereas `NULL` is not rendered at all.
-    ====
+Used on brush entities of the trigger type, and buyzones in Counter-Strike.
++
+NOTE: It is recommended to use `NULL` over this as its faces are rendered invisible, whereas `NULL` is not rendered at all.
 
 [[BEVEL]]
 link:#BEVEL[`BEVEL`] (PRECISE)::
-    Behaves like `NULL`, doesn't expand when generating clip hulls. Also used to eliminate exterior corner clipping bugs.
-
-    [[NOTE]]
-    ====
-    It is recommended to use `-cliptype precise` for removing clipping errors.
-    ====
+Behaves like `NULL`, doesn't expand when generating clip hulls. Also used to eliminate exterior corner clipping bugs.
++
+NOTE: It is recommended to use `-cliptype precise` for removing clipping errors.
 
 [[BEVELBRUSH]]
 link:#BEVELBRUSH[`BEVELBRUSH`]::
-    Like `BEVEL`, but applies to the whole brush rather than a single face.
+Like `BEVEL`, but applies to the whole brush rather than a single face.
 
 [[BLACK_HIDDEN]]
 link:#BLACK_HIDDEN[`BLACK_HIDDEN`]::
-    Blocks light and can be used to create shadow patterns.
+Blocks light and can be used to create shadow patterns.
 
 [[BOUNDINGBOX]]
 link:#BOUNDINGBOX[`BOUNDINGBOX`]::
-    Used to determine the direction of rotation of an entity. Used with `ORIGIN`.
+Used to determine the direction of rotation of an entity. Used with `ORIGIN`.
 
 [[CLIP]]
 link:#CLIP[`CLIP`]::
-    Solid to all objects but physically simulated projectiles, dropped weapons and items.
+Solid to all objects but physically simulated projectiles, dropped weapons and items.
 
 [[CLIPHULL1]]
 link:#CLIPHULL1[`CLIPHULL1`] (STAND)::
-    Clips standing players and only allows crouching. Also allows players to crouch jump inside.
+Clips standing players and only allows crouching. Also allows players to crouch jump inside.
 
 [[CLIPHULL2]]
 link:#CLIPHULL2[`CLIPHULL2`] (BIG SIZE)::
-    Clips entities that has a big collision hull.
+Clips entities that has a big collision hull.
 
 [[CLIPHULL3]]
 link:#CLIPHULL3[`CLIPHULL3`] (CROUCH)::
-    Clips crouching players and only allows standing. Will stuck players who crouch inside the brush.
+Clips crouching players and only allows standing. Will stuck players who crouch inside the brush.
 
 [[CLIPBEVEL]]
 link:#CLIPBEVEL[`CLIPBEVEL`]::
-    Like `BEVEL` but adds clip hulls, like `CLIP`.
+Like `BEVEL` but adds clip hulls, like `CLIP`.
 
 [[CLIPBEVELBRUSH]]
 link:#CLIPBEVELBRUSH[`CLIPBEVELBRUSH`]::
-    Like `BEVELBRUSH` but adds clip hulls, like `CLIP`.
+Like `BEVELBRUSH` but adds clip hulls, like `CLIP`.
 
 [[CONTENTEMPTY]]
 link:#CONTENTEMPTY[`CONTENTEMPTY`] (EMPTY BRUSH)::
-    Behaves like `func_illusionary` without texture. Will block thirdperson camera as if the camera hit a wall behind the player.
+Behaves like `func_illusionary` without texture. Will block thirdperson camera as if the camera hit a wall behind the player.
 
 [[CONTENTWATER]]
 link:#CONTENTWATER[`CONTENTWATER`] (WATER BRUSH)::
-    Behaves like `func_water` without texture. Players inside the brush it will render a black screen for the player.
+Behaves like `func_water` without texture. Players inside the brush it will render a black screen for the player.
 
 [[HINT]]
 link:#HINT[`HINT`]::
-    This texture is used to instruct the compiler to cut visleaves and is used in combination with `SKIP` textures.
+This texture is used to instruct the compiler to cut visleaves and is used in combination with `SKIP` textures.
 
 [[NOCLIP]]
 link:#NOCLIP[`NOCLIP`]::
-    Behaves like `NULL`, except it doesn't create clipping hulls of the faces where this texture is applied.
+Behaves like `NULL`, except it doesn't create clipping hulls of the faces where this texture is applied.
 
 [[NULL]]
 link:#NULL[`NULL`]::
-    Removes faces of brushes during compilation. It can be applied to both brush entities and world brushes. Commonly used for faces, not seen by the player and doesn't add to the `w_poly` count.
-
-    This texture still blocks VIS and generates clip hulls to preserve collision detection of the entire brush. Can also be used with `func_illusionary` to prevent collision.
-
-    [[INFO]]
-    ====
-    ZHLT and VHLT has a `-nonulltex` flag which can be used to disable `NULL` stripping, allowing the texture to be rendered.
-    ====
+Removes faces of brushes during compilation. It can be applied to both brush entities and world brushes. Commonly used for faces, not seen by the player and doesn't add to the `w_poly` count.
++
+This texture still blocks VIS and generates clip hulls to preserve collision detection of the entire brush. Can also be used with `func_illusionary` to prevent collision.
++
+[INFO]
+====
+ZHLT and VHLT has a `-nonulltex` flag which can be used to disable `NULL` stripping, allowing the texture to be rendered.
+====
 
 [[NULLNOCLIP]]
 link:#NULLNOCLIP[`NULLNOCLIP`]::
-    Behaves like `NOCLIP` and `NULL` combined.
+Behaves like `NOCLIP` and `NULL` combined.
 
 [[ORIGIN]]
 link:#ORIGIN[`ORIGIN`]::
-    Used for setting the origin of origin based brushes like `func_door_rotating`, `func_tracktrain`, etc.
+Used for setting the origin of origin based brushes like `func_door_rotating`, `func_tracktrain`, etc.
 
 [[SKIP]]
 link:#SKIP[`SKIP`]::
-    Has no effect on anything. Useful in combination with the `HINT` texture. Skip faces are removed during compilation, so a brush textured with skip won't prevent leaks. Also useful as a tool in Hammer for grouping, moving and place-holding objects.
+Has no effect on anything. Useful in combination with the `HINT` texture. Skip faces are removed during compilation, so a brush textured with skip won't prevent leaks.
++
+[HINT]
+====
+It can be useful as a tool in Hammer for grouping, moving and place-holding objects.
+====
 
 [[SKY]]
 link:#SKY[`SKY`]::
-    This texture is used to make 2D skyboxes. Casts light if there is a `light_environment` entity in the map.
+This texture is used to make 2D skyboxes. Casts light if there is a `light_environment` entity in the map.
 
 [[SOLIDHINT]]
 link:#SOLIDHINT[`SOLIDHINT`]::
-    Similar to `HINT` but can be applied to faces of solid brushes. Can reduce number of visleaf cuts and decrease the size of the compiled map. Makes it possibe to manually add extra faces for the BSP compiler to choose from, in order to help reduce face count and other counts.
+Similar to `HINT` but can be applied to faces of solid brushes. Can reduce number of visleaf cuts and decrease the size of the compiled map.
++
+Makes it possibe to manually add extra faces for the BSP compiler to choose from, in order to help reduce face count and other counts.
 
 [[TRANSLUCENT]]
 link:#TRANSLUCENT[`TRANSLUCENT`]::
-    Similar to `CLIP` and behaves like `func_wall` and clips projectiles, dropped weapons and items. It can also prevent VIS, unlike a `func_wall` with a transparent texture.
+Similar to `CLIP` and behaves like `func_wall` and clips projectiles, dropped weapons and items. It can also prevent VIS, unlike a `func_wall` with a transparent texture.
 
 == Unused/Unknown Brush Textures
 
 [[SPLITFACE]]
 link:#SPLITFACE[`SPLITFACE`]::
-    Behaves like `HINT` when `HLCSG_NOSPLITBYHINT` is enabled in the compiler, whereas `HINT` will act as `CONTENTEMPTY`.
+Behaves like `HINT` when `HLCSG_NOSPLITBYHINT` is enabled in the compiler, whereas `HINT` will act as `CONTENTEMPTY`.
 
 [[CONTENTSKY]]
 link:#CONTENTSKY[`CONTENTSKY`] (SKY BRUSH)::
-    Behaves like SKY brush. Unused and untested.
+Behaves like `SKY` brush. Unused and untested.
 
 [[CONTENTSOLID]]
 link:#CONTENTSOLID[`CONTENTSOLID`] (SOLID BRUSH)::
-    Behaves like a solid brush. Unused and untested.
+Behaves like a solid brush. Unused and untested.
 
 == See Also
 
-  - link:texture-types.adoc[Texture Types]
-  - link:http://zhlt.info/special-textures.html[ZHLT special textures]
+- link:texture-types.adoc[Texture Types]
+- link:http://zhlt.info/special-textures.html[ZHLT special textures]
