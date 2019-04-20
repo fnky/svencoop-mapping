@@ -1,19 +1,28 @@
 = Compiler Brush Textures
-:revdate:   January 14, 2018
-:revnumber: 1.4
+:revdate:   April 20, 2019
+:revnumber: 1.5
 
 [[AAATRIGGER]]
 link:#AAATRIGGER[`AAATRIGGER`]::
-    Used on brush entities of the trigger type, and buyzones in Counter-Strike. It is recommended to use `NULL` over this as its faces are rendered invisible, whereas `NULL` is not rendered at all.
+    Used on brush entities of the trigger type, and buyzones in Counter-Strike.
+
+    [[NOTE]]
+    ====
+    It is recommended to use `NULL` over this as its faces are rendered invisible, whereas `NULL` is not rendered at all.
+    ====
 
 [[BEVEL]]
 link:#BEVEL[`BEVEL`] (PRECISE)::
     Behaves like `NULL`, doesn't expand when generating clip hulls. Also used to eliminate exterior corner clipping bugs.
+
+    [[NOTE]]
+    ====
     It is recommended to use `-cliptype precise` for removing clipping errors.
+    ====
 
 [[BEVELBRUSH]]
 link:#BEVELBRUSH[`BEVELBRUSH`]::
-    Like bevel, but what?
+    Like `BEVEL`, but applies to the whole brush rather than a single face.
 
 [[BLACK_HIDDEN]]
 link:#BLACK_HIDDEN[`BLACK_HIDDEN`]::
@@ -53,12 +62,18 @@ link:#HINT[`HINT`]::
 
 [[NOCLIP]]
 link:#NOCLIP[`NOCLIP`]::
-    Behaves like `NULL`, except it is opaque and soft cover?
+    Behaves like `NULL`, except it doesn't create clipping hulls of the faces where this texture is applied.
 
 [[NULL]]
 link:#NULL[`NULL`]::
-    Removed during compilation and. Can be applied to both entities and world brushes. Commonly used for faces, not seen by the player and doesn't add to the `w_poly` count.
+    Removes faces of brushes during compilation. It can be applied to both brush entities and world brushes. Commonly used for faces, not seen by the player and doesn't add to the `w_poly` count.
+
     This texture still blocks VIS and generates clip hulls to preserve collision detection of the entire brush. Can also be used with `func_illusionary` to prevent collision.
+
+    [[INFO]]
+    ====
+    ZHLT and VHLT has a `-nonulltex` flag which can be used to disable `NULL` stripping, allowing the texture to be rendered.
+    ====
 
 [[ORIGIN]]
 link:#ORIGIN[`ORIGIN`]::
